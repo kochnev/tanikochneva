@@ -1,67 +1,76 @@
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
 body {  
   margin: 0 auto;
   font-family: sans-serif;
-  } 
-
-* {
-    box-sizing: border-box;
 }
-a {
+ a {
     color: #ffffff;
     text-decoration: none;
 }
+ * {
+    box-sizing: border-box;
+}
 
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;   
+}
+
+/*---------Navbar-------------*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+
+/*--------Main structure-------------*/
+.container {
+  padding: 50px;
+  margin: 0 auto;
+}
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;   
+img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
 }
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-
-.border
+.pic
 {
-    border:1px solid black;
-   
+    border:1px solid black;   
     width: 300;
     height: 200px;
     background-image: url('../img/безенги-1.jpg');
     background-size: cover;   
 }
-.header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-}
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color :#33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
 
-.menu li:hover {
-    background-color: #0099cc;
-}
-.aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+/*--------Footer-------------*/
 .footer {
     background-color: #0099cc;
     color: #ffffff;
@@ -69,6 +78,8 @@ html {
     font-size: 12px;
     padding: 15px;
 }
+
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -103,7 +114,29 @@ html {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
-.container {
-  padding: 50px;
-  margin: 0 auto;
+
+/*menu adaptive*/
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
