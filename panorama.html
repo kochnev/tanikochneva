@@ -8,57 +8,123 @@
 <body>
 
 <ul class="topnav" id="myTopnav">
-  <li><a class="active" href="#home">ArtVision</a></li>
+  <li><a class="active" href="#home"><b>Art-Vision</b></a></li>
   <li><a href="#news">Аэрсъемка</a></li>
   <li><a href="#contact">Фото</a></li>
   <li><a href="#about">3D-туры</a></li>
-  <li><a href="#about">Видеостойки</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
+  <li><a href="#about">Видеостойки</a></li>  
+  <div class="bar" onclick="changeBar(this)">		
+		  <div class="bar1"></div>
+		  <div class="bar2"></div>
+		  <div class="bar3"></div>     
+  </div>
 </ul>
 
-<div class="container">
+<main class="container">
 	<div class="row">				
 		<div class="col-4">
-		   <img src="img/безенги-1.jpg" />
+		  <div class="card">
+		  	   <img src="img/безенги-1.jpg" alt="Горы День" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Горы День</h4>  
+		  	   </div>
+		  </div>		   
 		</div>
 		<div class="col-4">
-		    <img src="img/безенги-2.jpg"/>
+		   <div class="card">
+		  	   <img src="img/безенги-2.jpg" alt="Безенги ночью" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Безенги ночью</h4>  
+		  	   </div>
+		  </div>
 		</div>
 		<div class="col-4">
-		   <img src="img/безенги-1.jpg"/>
+		   <div class="card">
+		  	   <img src="img/безенги-3.jpg" alt="Привал" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Привал</h4>  
+		  	   </div>
+		  </div>
 		</div>
     </div>	
-    <div class="row">				
+  <div class="row">				
 		<div class="col-4">
-		   <img src="img/безенги-2.jpg" />
+		  <div class="card">
+		  	   <img src="img/безенги-1.jpg" alt="Горы День" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Горы День</h4>  
+		  	   </div>
+		  </div>		   
 		</div>
 		<div class="col-4">
-		    <img src="img/безенги-1.jpg" />
+		   <div class="card">
+		  	   <img src="img/безенги-2.jpg" alt="Безенги ночью" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Безенги ночью</h4>  
+		  	   </div>
+		  </div>
 		</div>
 		<div class="col-4">
-		   <img src="img/безенги-3.jpg" />
+		   <div class="card">
+		  	   <img src="img/безенги-3.jpg" alt="Привал" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Привал</h4>  
+		  	   </div>
+		  </div>
 		</div>
     </div>	
-    <div class="row">				
+   <div class="row">				
 		<div class="col-4">
-		   <img src="img/безенги-2.jpg" />
+		  <div class="card">
+		  	   <img src="img/безенги-1.jpg" alt="Горы День" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Горы День</h4>  
+		  	   </div>
+		  </div>		   
 		</div>
 		<div class="col-4">
-		    <img src="img/безенги-1.jpg" />
+		   <div class="card">
+		  	   <img src="img/безенги-2.jpg" alt="Безенги ночью" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Безенги ночью</h4>  
+		  	   </div>
+		  </div>
 		</div>
 		<div class="col-4">
-		   <img src="img/безенги-1.jpg" />
+		   <div class="card">
+		  	   <img src="img/безенги-3.jpg" alt="Привал" onclick="showModal(this)" />
+		  	   <div class="description">
+		  	   	    <h4>Привал</h4>  
+		  	   </div>
+		  </div>
 		</div>
     </div>	
     	    
-</div>
-		
+</main>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>		
 
 
 <div class="footer">
 <p>Все права защищены (c) 2016</p>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
 </body>
