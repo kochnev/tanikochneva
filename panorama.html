@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/main.css">
 <script type="text/javascript" src="js/main.js"></script>
@@ -12,29 +13,29 @@
   <li><a href="#news">Аэрсъемка</a></li>
   <li><a href="#contact">Фото</a></li>
   <li><a href="#about">3D-туры</a></li>
-  <li><a href="#about">Видеостойки</a></li>  
-  <div class="bar" onclick="changeBar(this)">		
+  <li><a href="#about">Видеостойки</a></li>
+  <div class="bar" onclick="changeBar(this)">
 		  <div class="bar1"></div>
 		  <div class="bar2"></div>
-		  <div class="bar3"></div>     
+		  <div class="bar3"></div>
   </div>
 </ul>
 
 <main class="container">
-	<div class="row">				
+	<div class="row">
 		<div class="col-4">
 		  <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-1.jpg" alt="Горы День" onclick="openModal();currentSlide(1)" />
 		  	   <div class="description">
-		  	   	    <h4>Горы День</h4>  
+		  	   	    <h4>Горы День</h4>
 		  	   </div>
-		  </div>		   
+		  </div>
 		</div>
 		<div class="col-4">
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-2.jpg" alt="Безенги ночью" onclick="openModal();currentSlide(2)" />
 		  	   <div class="description">
-		  	   	    <h4>Безенги ночью</h4>  
+		  	   	    <h4>Безенги ночью</h4>
 		  	   </div>
 		  </div>
 		</div>
@@ -42,25 +43,25 @@
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-3.jpg" alt="Привал" onclick="openModal();currentSlide(3)" />
 		  	   <div class="description">
-		  	   	    <h4>Привал</h4>  
+		  	   	    <h4>Привал</h4>
 		  	   </div>
 		  </div>
 		</div>
     </div>
-    <div class="row">				
+    <div class="row">
 		<div class="col-4">
 		  <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-1.jpg" alt="Горы День" onclick="openModal();currentSlide(4)" />
 		  	   <div class="description">
-		  	   	    <h4>Горы День</h4>  
+		  	   	    <h4>Горы День</h4>
 		  	   </div>
-		  </div>		   
+		  </div>
 		</div>
 		<div class="col-4">
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-2.jpg" alt="Безенги ночью" onclick="openModal();currentSlide(5)" />
 		  	   <div class="description">
-		  	   	    <h4>Безенги ночью</h4>  
+		  	   	    <h4>Безенги ночью</h4>
 		  	   </div>
 		  </div>
 		</div>
@@ -68,25 +69,25 @@
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-3.jpg" alt="Привал" onclick="openModal();currentSlide(6)" />
 		  	   <div class="description">
-		  	   	    <h4>Привал</h4>  
+		  	   	    <h4>Привал</h4>
 		  	   </div>
 		  </div>
 		</div>
     </div>
-    <div class="row">				
+    <div class="row">
 		<div class="col-4">
 		  <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-1.jpg" alt="Горы День" onclick="openModal();currentSlide(7)" />
 		  	   <div class="description">
-		  	   	    <h4>Горы День</h4>  
+		  	   	    <h4>Горы День</h4>
 		  	   </div>
-		  </div>		   
+		  </div>
 		</div>
 		<div class="col-4">
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-2.jpg" alt="Безенги ночью" onclick="openModal();currentSlide(8)" />
 		  	   <div class="description">
-		  	   	    <h4>Безенги ночью</h4>  
+		  	   	    <h4>Безенги ночью</h4>
 		  	   </div>
 		  </div>
 		</div>
@@ -94,22 +95,26 @@
 		   <div class="card">
 		  	   <img class="mySlides"  src="img/безенги-3.jpg" alt="Привал" onclick="openModal();currentSlide(9)" />
 		  	   <div class="description">
-		  	   	    <h4>Привал</h4>  
+		  	   	    <h4>Привал</h4>
 		  	   </div>
 		  </div>
 		</div>
-    </div>	  
-    	    
+    </div>
+
 </main>
 
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="img01">
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  <div id="caption"></div>
+  <div class="modal-content">
+    <div class="slide">
+        <img  id="img01">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div id="caption"></div>
+  </div>
 </div>
 
 <div class="footer">

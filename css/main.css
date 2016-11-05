@@ -2,7 +2,7 @@ html {
     font-family: "Helvetica", sans-serif;
 }
 
-body {  
+body {
   margin: 0 auto;
   background-color: #f4f4f4;
 }
@@ -66,7 +66,7 @@ ul.topnav li a:hover {background-color: #555;}
 /*--------Main structure-------------*/
 [class*="col-"] {
     float: left;
-    padding: 15px;   
+    padding: 15px;
 }
 
 .container {
@@ -107,8 +107,8 @@ img {
 }
 /* Add some padding inside the card container */
 .description {
-    padding: 2px 16px;  
-    text-align: center; 
+    padding: 2px 16px;
+    text-align: center;
 }
 .description h4 {
   margin: 8px auto;
@@ -136,10 +136,17 @@ img {
 .modal-content {
     margin: auto;
     display: block;
-    width: 60%;  
-    max-width: 1024px; 
+    width: 60%;
+    max-width: 1024px;
+    position: relative;
 }
 
+.slide {
+    position: relative;
+}
+#img01 {
+    display: block;
+}
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -156,7 +163,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -167,6 +174,7 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  display: block;
 }
 /* Position the "next button" to the right */
 .next {
@@ -203,7 +211,7 @@ img {
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;   
+    font-size: 40px;
     transition: 0.3s;
 }
 
@@ -249,7 +257,7 @@ img {
 
 /*-------- GRID:-------------- */
 [class*="col-"] {
-    width: 100%;   
+    width: 100%;
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
